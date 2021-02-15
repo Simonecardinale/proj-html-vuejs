@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Avada Music</title>
+</head>
+<body>
+    <!-- container vue -->
+    <div id="app">
+        <!-- nav bar -->
+        <nav>
+            <!-- la classe container si occuperà soltanto di contenere i vari elementi e di staccarli dai margini dello schermo -->
+            <div class="container">
+                <div class="logo_container">
+                    <img class="logo" src="music\images\avada-music-logo-mobile-retina.png" alt="">
+                    <h2>AVADA MUSIC</h2>
+                </div>
+                <span :class="show">
+                    <i @click="clickMenu()" class="fas fa-bars"></i>
+                </span>
+                <span :class="hide">
+                    <i @click="clickMenu()" class="fas fa-times"></i>
+                </span>
+            </div>
+        </nav>
+        <div :class="hide" class="hamburger_menu">
+            <ul class="menu_list">
+                <li v-for="val in menu">{{val}}</li>
+            </ul>
+        </div>
+        <!-- /nav bar -->
+    </div>
+<!-- /container vue -->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

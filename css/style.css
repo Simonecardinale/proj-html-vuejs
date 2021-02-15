@@ -1,0 +1,81 @@
+/* stili generali  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+/* /stili generali */
+
+/* nav bar */
+
+nav {
+    height: 65px;
+    width: 100%;
+    background-color: #262934;
+    
+}
+
+.logo_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    height: 80%;
+    padding-right: 20px;
+}
+
+nav .container span > i {
+    font-size: 30px;
+    z-index: 1000;
+}
+
+.hamburger_menu {
+    height: 100vh;
+    width: 100%;
+    background-color: #ec4858;
+    position: absolute;
+    top: 0;
+}
+
+.container span {
+    z-index: 1000;
+}
+
+.menu_list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_list >li {
+    font-size: 30px;
+}
+
+/* /nav bar */
