@@ -10,7 +10,7 @@
 
 .container {
     height: 100%;
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@ header h2 {
     margin: auto;
 }
 
-h2 {
+.latest_brand_news h2, .music_is_life h2 {
     font-size: 70px;
     text-align: center;
     padding: 50px 30px;
@@ -169,14 +169,42 @@ hr {
 
 /* section latest brand news */
 
-    .latest_brand_news {
-        width: 100%;
-        background-color: #252a33;
-    }
+.latest_brand_news {
+    width: 100%;
+    background-color: #252a33;
+}
+
+.container_img {
+    /* border: 2px solid red; */
+    min-height: 1500px;
+}
+    
+.left_container_img, .right_container_img {
+    min-height: 1500px;
+    /* border: 2px solid black; */
+    margin: 10px;
+    max-width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_container_img img, .right_container_img img {
+    border: 1px solid #7a7688;
+    margin-top: 20px;
+    max-width: 825px;
+}
+
+
+
+
 
 /* /section latest brand news */
-
-
 
 
 

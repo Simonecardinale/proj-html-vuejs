@@ -3,7 +3,41 @@ var app = new Vue({
     data: {
         menu: ["Home", "Meet The Band", "Live Dates", "Latest News", "Albums", "Fans"],
         show: "show",
-        hide: "hide"
+        hide: "hide",
+        blogArray:[ 
+            {
+                blogpost: [
+                    {
+                        img: "music/images/blog_music_techo-1200x600.jpg",
+                        title: "Technology and music",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
+                    },
+                    {
+                        img: "music/images/blog-post3-400x600.jpg",
+                        title: "While my guitar gently weeps",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
+                    },
+                    {
+                        img: "music/images/blog-post4-400x600.jpg",
+                        title: "It just sounds better",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
+                    },
+                    {
+                        img: "music/images/blog_flavor_rock-1200x600.jpg",
+                        title: "The flavor of rock",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
+                    },
+                ],
+                blogpostRight: [
+                    {
+                        img:"music/images/blog-post1-400x600.jpg"
+                    },
+{
+                        img:"music/images/blog-post2-400x600.jpg"
+                    },
+                ]
+            }
+        ],
     },
     methods: {
 
@@ -17,7 +51,7 @@ var app = new Vue({
                 this.show = "hide"
                 this.hide="show"
             }
-            console.log(this.show);
+            console.log(this.blogArray);
         }
     }
 });
