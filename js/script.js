@@ -6,6 +6,9 @@ var app = new Vue({
         hide: "hide"
     },
     methods: {
+
+        // funzione per aprire il l'hamburger menu
+
         clickMenu() {
             if(this.show == "hide"){
                 this.show = "show"
