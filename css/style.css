@@ -130,6 +130,53 @@ header h2 {
 
 /* /header */
 
+/* section music is life */
+
+.music_is_life {
+    width: 100%;
+    background-color: #323844;
+}
+
+.pink_bar {
+    width: 500px;
+    height: 16px;
+    background-color: #ec4858;
+    margin: auto;
+}
+
+h2 {
+    font-size: 70px;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+hr {
+    color: #7a7688;
+    width: 300px;
+    margin: auto;
+}
+
+.music_is_life p, .latest_brand_news p {
+    width: 70%;
+    color: #7a7688;
+    text-align: center;
+    line-height: 2;
+    padding: 50px;
+    margin: auto;
+}
+
+/* /section music is life */
+
+/* section latest brand news */
+
+    .latest_brand_news {
+        width: 100%;
+        background-color: #252a33;
+    }
+
+/* /section latest brand news */
+
+
 
 
 
