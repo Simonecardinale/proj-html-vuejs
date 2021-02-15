@@ -10,7 +10,7 @@ var app = new Vue({
                     {
                         img: "music/images/blog_music_techo-1200x600.jpg",
                         title: "Technology and music",
-                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam",
                     },
                     {
                         img: "music/images/blog-post3-400x600.jpg",
@@ -30,10 +30,14 @@ var app = new Vue({
                 ],
                 blogpostRight: [
                     {
-                        img:"music/images/blog-post1-400x600.jpg"
+                        img:"music/images/blog-post1-400x600.jpg",
+                        title: "Taking back to the old school",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
                     },
-{
-                        img:"music/images/blog-post2-400x600.jpg"
+                    {
+                        img:"music/images/blog-post2-400x600.jpg",
+                        title: "While my guitar gently weeps",
+                        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
                     },
                 ]
             }

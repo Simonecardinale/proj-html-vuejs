@@ -72,15 +72,26 @@
             <div class="container container_img">
                 <div class="left_container_img">
                     <div v-for="val in blogArray[0].blogpost" class="blog " :key="val.img">
+                        <div class="cover_cards">
+                            <h3>{{val.title}}</h3>
+                        </div>
                         <img :src="val.img" alt="">
                         <div class="text_container">
-                            
+                            <h3>{{val.title}}</h3>
+                            <p>{{val.text}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="right_container_img">
                     <div v-for="val in blogArray[0].blogpostRight" :key="val.img" class="blog">
+                        <div class="cover_cards">
+                            <h3>{{val.title}}</h3>
+                        </div>
                         <img :src="val.img" alt="">
+                        <div class="text_container">
+                            <h3>{{val.title}}</h3>
+                            <p>{{val.text}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
