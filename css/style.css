@@ -29,6 +29,10 @@ body {
     display: inline-block;
 }
 
+.flex {
+    display: flex;
+}
+
 /* /stili generali */
 
 /* nav bar */
@@ -148,7 +152,7 @@ header h2 {
     margin: auto;
 }
 
-.latest_brand_news h2, .music_is_life h2 {
+.latest_brand_news h2, .music_is_life h2, .live_date h2 {
     font-size: 70px;
     text-align: center;
     padding: 50px 30px;
@@ -160,7 +164,7 @@ hr {
     margin: auto;
 }
 
-.music_is_life p, .latest_brand_news p {
+.music_is_life p, .latest_brand_news p, .live_date p {
     width: 70%;
     color: #7a7688;
     text-align: center;
@@ -288,8 +292,88 @@ hr {
     border-radius: 50%;
 }
 
-
 /* /section player cta */
+
+/* section live dates */
+
+.live_date {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.date_list {
+    list-style: none;
+    width: 100%;
+}
+
+.date_list li {
+    padding: 20px;
+    background-color: #323844;
+    color: #ec4858;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.date_list i {
+    font-size: 10px;
+    padding: 10px;
+}
+
+.item_elements {
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.map_permission {
+    width: 30%;
+    height: 250px;
+    background-color: #2d323d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_permission p, .li_description p {
+    margin: 10px;
+    width: 100%;
+    padding: 5px;
+    color: #24272f;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.cta_accept {
+    padding: 15px;
+    background-color: #ec4858;
+    cursor: pointer;
+}
+
+.li_description {
+    width: 65%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.li_description h3 {
+    font-weight: 100;
+}
+
+.li_description p {
+    text-align: left;
+    color: #787b8d;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* /section live dates */
+
 
 
 
@@ -312,10 +396,21 @@ hr {
     display: none;
 }
 
-.cta_player:hover {
+.cta_player:hover, .cta_accept:hover {
     background-color: white;
-}
-
-.cta_player:hover h2 {
     color: black;
 }
+
+.cta_player:hover h2{
+    color: black;
+}
+
+.date_list li:hover i {
+    background-color: #ec4858;
+}
+
+.date_list li:hover {
+    background-color: #323844;
+}
+
+

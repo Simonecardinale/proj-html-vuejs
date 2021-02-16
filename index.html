@@ -43,12 +43,8 @@
             <h1>Untold Stories</h1>
             <h2>There is an untold story behind every favourite song.</h2>
             <div class="cta_container">
-                <div class="latest_album">
-                    LATEST ALBUM
-                </div>
-                <div class="live_dates">
-                    LIVE DATES
-                </div>
+                <div class="latest_album">LATEST ALBUM</div>
+                <div class="live_dates">LIVE DATES</div>
             </div>
         </header>
 
@@ -98,7 +94,7 @@
         </section>
 
         <!-- /section latest brand news -->
-        <!-- secttion player cta -->
+        <!-- section player cta -->
 
         <section class="player_cta">
             <div class="cta_player">
@@ -110,7 +106,43 @@
             </div>
         </section>
 
-        <!-- /secttion player cta -->
+        <!-- /section player cta -->
+        <!-- section live dates -->
+
+        <section class="live_date">
+            <h2>Live Dates</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vero quos in debitis odio obcaecati dolores natus voluptatem, reiciendis totam impedit voluptas</p>
+            <div class="container">
+                <ul class="date_list">
+                    <li @click="clickDates(index)" v-for="(item, index) in datesArray">
+                        <span :class="item.visible">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span :class="item.notVisible">
+                            <i class="fas fa-minus"></i>
+                        </span>
+                        {{item.date}}
+                        <div class="item_elements" :class="datesArray[index].dateShow">
+                            <div class="map_permission">
+                                <p>
+                                    For privacy reasons Google Maps needs your permission to be loaded.
+                                </p>
+                                <div class="cta_accept">I ACCEPT</div>
+                            </div>
+                            <div class="li_description">
+                                <h3>{{item.title}}</h3>
+                                <p>{{item.text}}</p>
+                                <div class="cta_accept">BOOK NOW</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- /section live dates -->
+
 
     </div>
 <!-- /container vue -->

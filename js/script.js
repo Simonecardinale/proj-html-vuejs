@@ -42,6 +42,48 @@ var app = new Vue({
                 ]
             }
         ],
+        datesArray: [
+            {
+                date: "17/08/2020 GEM FESTIVAL 2020 ANAKALA, GEORGIA",
+                title: "Untold Stories",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                dateShow:"hide",
+                visible: "show",
+                notVisible: "hide"
+            },
+            {
+                date: "24/9/2020 GROOVEFEST DOMINICAL REPUBLIC",
+                title: "Untold Stories",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                dateShow:"hide",
+                visible: "show",
+                notVisible: "hide"
+            },
+            {
+                date: "31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MOROCCO",
+                title: "Untold Stories",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                dateShow:"hide",
+                visible: "show",
+                notVisible: "hide"
+            },
+            {
+                date: "07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO",
+                title: "Untold Stories",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                dateShow:"hide",
+                visible: "show",
+                notVisible: "hide"
+            },
+            {
+                date: "10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA",
+                title: "Untold Stories",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                dateShow:"hide",
+                visible: "show",
+                notVisible: "hide"
+            },
+        ],
     },
     methods: {
 
@@ -56,6 +98,19 @@ var app = new Vue({
                 this.hide="show"
             }
             console.log(this.blogArray);
+        },
+
+
+        clickDates(index) {
+            if(this.datesArray[index].dateShow == "hide") {
+                this.datesArray[index].dateShow = "flex"
+                this.datesArray[index].visible = "hide"
+                this.datesArray[index].notVisible = "show"
+            } else {
+                this.datesArray[index].dateShow = "hide"
+                this.datesArray[index].visible = "show"
+                this.datesArray[index].notVisible = "hide"
+            }
         }
     }
 });
