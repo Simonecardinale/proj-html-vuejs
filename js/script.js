@@ -4,7 +4,7 @@ var app = new Vue({
         menu: ["Home", "Meet The Band", "Live Dates", "Latest News", "Albums", "Fans"],
         show: "show",
         hide: "hide",
-        blogArray:[ 
+        blogArray:[
             {
                 blogpost: [
                     {
@@ -84,6 +84,28 @@ var app = new Vue({
                 notVisible: "hide"
             },
         ],
+        socialArray: [
+            {
+                classe:"fab fa-facebook-f",
+                name: "Facebook",
+                show: "hide"
+            },
+            {
+                classe:"fab fa-twitter",
+                name: "Twitter",
+                show: "hide"
+            },
+            {
+                classe:"fab fa-instagram",
+                name: "Instagram",
+                show: "hide"
+            },
+            {
+                classe:"fab fa-youtube",
+                name: "Youtube",
+                show: "hide"
+            },
+        ]
     },
     methods: {
 
@@ -100,6 +122,7 @@ var app = new Vue({
             console.log(this.blogArray);
         },
 
+        // funzione per aprire i menu a tendina delle date dei concerti
 
         clickDates(index) {
             if(this.datesArray[index].dateShow == "hide") {
@@ -110,6 +133,20 @@ var app = new Vue({
                 this.datesArray[index].dateShow = "hide"
                 this.datesArray[index].visible = "show"
                 this.datesArray[index].notVisible = "hide"
+            }
+        },
+
+        // funzione per mouseLeave e mouseOver per mostrare il nome delle icone social
+
+        clickSocialOver(index) {
+            console.log(this.socialArray[index].show);
+            if(this.socialArray[index].show == "hide") {
+                this.socialArray[index].show = "show"
+            }
+        },
+        clickSocialLeave(index) {
+            if(this.socialArray[index].show == "show") {
+                this.socialArray[index].show = "hide"
             }
         }
     }

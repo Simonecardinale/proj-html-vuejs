@@ -23,10 +23,10 @@
                     <img class="logo" src="music\images\avada-music-logo-mobile-retina.png" alt="">
                     <h2>AVADA MUSIC</h2>
                 </div>
-                <span :class="show">
+                <span class="menu_icon_container" :class="show">
                     <i @click="clickMenu()" class="fas fa-bars"></i>
                 </span>
-                <span :class="hide">
+                <span class="menu_icon_container" :class="hide">
                     <i @click="clickMenu()" class="fas fa-times"></i>
                 </span>
             </div>
@@ -39,7 +39,7 @@
         <!-- /nav bar -->
         <!-- header -->
         
-        <header>
+        <header id="home">
             <h1>Untold Stories</h1>
             <h2>There is an untold story behind every favourite song.</h2>
             <div class="cta_container">
@@ -146,9 +146,36 @@
 
         <!-- /section live dates -->
         <!-- footer -->
-
+        <footer>
+            <div class="container_footer">
+                <div class="container">
+                    <div class="logo_container">
+                        <img class="logo" src="music\images\avada-music-logo-mobile-retina.png" alt="">
+                        <h2>AVADA MUSIC</h2>
+                    </div>
+                    <div class="menu_footer">
+                        <ul class="menu_list_footer">
+                            <li v-for="val in menu">{{val}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright_container">
+                    <p>&copy; Copyright 2012 - 2021 | AVADA THEME BY THEMEFUSION | ALL RIGHTS RESERVED | POWERED BY WORDPRESS</p>
+                </div>
+                <div class="social_container">
+                    <span @mouseOver="clickSocialOver(index)" @mouseLeave="clickSocialLeave(index)" v-for="(element, index) in socialArray">
+                        <div :class="socialArray[index].show" class="social_name">{{element.name}}</div>
+                        <i :class="element.classe"></i>
+                    </span>
+                </div>
+            </div>
+        </footer>
         <!-- /footer -->
-
+        <div class="home_button">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
     </div>
 <!-- /container vue -->
 

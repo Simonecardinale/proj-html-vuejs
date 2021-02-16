@@ -43,14 +43,14 @@ nav {
     width: 100%;
     background-color: #262934;
     position: fixed;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 .logo_container {
     height: 100%;
     display: flex;
     align-items: center;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .logo {
@@ -62,18 +62,22 @@ nav .container span > i {
     font-size: 30px;
 }
 
-.hamburger_menu {
-    height: 100vh;
-    width: 100%;
-    background-color: #ec4858;
-    position: absolute;
-    top: 0;
-}
-
-.container span {
+.menu_icon_container {
+    position: relative;
     z-index: 1000;
     cursor: pointer;
 }
+
+.hamburger_menu {
+    height: 100vh;
+    width: 100%;
+    margin-top: 65px;
+    background-color: #ec4858;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
 
 .menu_list {
     height: 100%;
@@ -377,7 +381,94 @@ hr {
 
 /* /section live dates */
 
+/* footer */
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_footer {
+    background-color: #323844;
+    padding: 50px 0;
+}
+
+.menu_list_footer {
+    list-style: none;
+    display: flex;
+}
+
+.menu_list_footer li {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.menu_list_footer li:not(li:first-child) {
+    color: #787b8d;
+}
+
+.copyright_container {
+    padding: 50px 0;
+}
+
+.copyright_container p {
+    font-size: 14px;
+    color: #787b8d;
+}
+
+.social_container {
+    display: flex;
+}
+
+.social_container span {
+    position: relative;
+}
+
+.social_container i {
+    padding: 10px;
+    color: #7d7b8d;
+    background-color: #323844;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social_name {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.social_name::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.home_button a {
+    padding: 10px 15px;
+    background-color: #313233;
+    position: fixed;
+    bottom: 0%;
+    left: 90%;
+    z-index: 1000;
+}
+
+/* /footer */
 
 
 /* hover */
@@ -416,4 +507,7 @@ hr {
     background-color: #323844;
 }
 
+.menu_list_footer li:not(li:first-child):hover {
+    color: white;
+}
 
