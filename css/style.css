@@ -12,6 +12,7 @@ body {
     background-color: #252a33;
 }
 
+
 .container {
     height: 100%;
     width: 95%;
@@ -41,7 +42,8 @@ nav {
     height: 65px;
     width: 100%;
     background-color: #262934;
-    
+    position: fixed;
+    z-index: 10000;
 }
 
 .logo_container {
@@ -58,7 +60,6 @@ nav {
 
 nav .container span > i {
     font-size: 30px;
-    z-index: 1000;
 }
 
 .hamburger_menu {
@@ -107,7 +108,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
+
 
 header h1 {
     font-size: 170px;
@@ -152,7 +155,7 @@ header h2 {
     margin: auto;
 }
 
-.latest_brand_news h2, .music_is_life h2, .live_date h2 {
+.latest_brand_news h2, .music_is_life h2, .live_date h2:not(.cta_player h2) {
     font-size: 70px;
     text-align: center;
     padding: 50px 30px;

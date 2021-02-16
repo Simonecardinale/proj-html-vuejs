@@ -93,7 +93,7 @@ var app = new Vue({
             if(this.show == "hide"){
                 this.show = "show"
                 this.hide = "hide"
-            }else if(this.show == "show") {
+            }else {
                 this.show = "hide"
                 this.hide="show"
             }
