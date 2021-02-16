@@ -8,6 +8,10 @@
     color: white;
 }
 
+body {
+    background-color: #252a33;
+}
+
 .container {
     height: 100%;
     width: 95%;
@@ -171,7 +175,6 @@ hr {
 
 .latest_brand_news {
     width: 100%;
-    background-color: #252a33;
 }
 
 .container_img {
@@ -241,11 +244,52 @@ hr {
     letter-spacing: 3px;
 }
 
-
-
-
-
 /* /section latest brand news */
+
+/* section player cta */
+
+.cta_player {
+    height: 160px;
+    width: 100%;
+    background-color: #ec4858;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_player h2 {
+    font-weight: 100;
+}
+
+.quote {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../music/images/home-testimonial-parallax.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote h2 {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    width: 70%;
+    line-height: 1.6;
+}
+
+.quote i {
+    margin-top: 30px;
+    font-size: 100px;
+    color: #ec4858;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* /section player cta */
 
 
 
@@ -266,4 +310,12 @@ hr {
 
 .blog:hover .text_container {
     display: none;
+}
+
+.cta_player:hover {
+    background-color: white;
+}
+
+.cta_player:hover h2 {
+    color: black;
 }

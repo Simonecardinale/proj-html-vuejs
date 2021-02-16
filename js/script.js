@@ -31,7 +31,7 @@ var app = new Vue({
                 blogpostRight: [
                     {
                         img:"music/images/blog-post1-400x600.jpg",
-                        title: "Taking back to the old school",
+                        title: "Taking back to the old s",
                         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium aperiam"
                     },
                     {
